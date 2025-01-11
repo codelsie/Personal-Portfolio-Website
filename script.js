@@ -7,7 +7,7 @@ function sendWhatsAppMessage(event) {
   const message = document.getElementById("message").value;
 
   // Replace with your phone number (including country code, no "+" sign)
-  const phoneNumber = "2349824785643";
+  const phoneNumber = "add your phone number";
 
   // Create the WhatsApp message
   const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. Here is my message: ${message}`;
