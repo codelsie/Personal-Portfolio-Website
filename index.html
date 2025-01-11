@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code With Elsie</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">Code With Elsie</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-container">
+        <h1>Welcome to Code With Elsie</h1>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="./1736608681525.jpg" alt="Professional headshot">
+        <div class="about-text">
+          <p>I am a passionate web developer. I love to design visual appealing and functional websites. My mission is to bring ideas to life through creative solutions. I specialize in back-end & front-end development, ensuring seamless user experiences. And i don't give a shit!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://cdn.motocms.com/src/868x580/122400/122469-original-1200.jpg" alt="Project 1">
+          <h3>Project One</h3>
+          <p>A stunning website built for e-commerce.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://s3.envato.com/files/262498926/01_preview.__large_preview.jpg" alt="Project 2">
+          <h3>Project Two</h3>
+          <p>A responsive app for managing tasks.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://sminion.com/images/template/screen/11794933562680786a3659.jpeg" alt="Project 3">
+          <h3>Project Three</h3>
+          <p>A blog site with a clean design.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://themewagon.com/wp-content/uploads/2020/02/adward-1.jpg" alt="Project 1">
+            <h3>Project four</h3>
+            <p>A stunning website built for e-commerce.</p>
+          </div>
+          <div class="project-card">
+            <img src="https://www.figma.com/community/resource/d8c46146-c277-44fc-8502-376305ea4bf2/thumbnail" alt="Project 2">
+            <h3>Project five</h3>
+            <p>A responsive app for managing tasks.</p>
+          </div>
+          <div class="project-card">
+            <img src="https://i0.wp.com/themes.svn.wordpress.org/royal-jewellery/0.3.2/screenshot.png?w=post-thumbnail&strip=all" alt="Project 3">
+            <h3>Project six</h3>
+            <p>A blog site with a clean design.</p>
+          </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact Me</h2>
+      <form onsubmit="sendWhatsAppMessage(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+    
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+
+    <section id="contact" class="container">
+      <h2>Follow Me</h2>
+          <div class="social-links">
+            <a href="https://wa.me/2348123456789" target="_blank" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/yourusername" target="_blank" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/yourusername" target="_blank" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Code With Elsie. All rights reserved.</p>
+  </footer>
+</body>
+</html>
