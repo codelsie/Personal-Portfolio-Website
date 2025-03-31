@@ -6,16 +6,16 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 16px; /* Base font size */
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  color: #ffffff;
-  background: #0f172a;
-  overflow-x: hidden;
+  color: #333;
+  background-color: #f8f8f8;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
   margin: 0;
 }
 
@@ -36,19 +36,15 @@ body {
 
 /* Header */
 header {
-  background: #1e293b;
+  background: #1c2841;
   padding: 1rem 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
 }
 
 .logo {
   color: white;
   font-family: cursive;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.22rem;
 }
 
 nav {
@@ -68,10 +64,11 @@ nav {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
+  font-family: monospace;
 }
 
 .nav-links a:hover {
-  color: #facc15;
+  color: #007bff;
 }
 
 /* Hero Section */
@@ -83,25 +80,34 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: hwb(180 99% 0% / 0.975);
+  padding: 0 1rem;
   position: relative;
-  color: white;
-  padding: 2rem;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5338504f;
 }
 
 .hero-container {
   position: relative;
-  max-width: 800px;
 }
 
 .hero-container h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem); /* Dynamic scaling */
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.hero-container h3 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+.hero-container p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin-bottom: 1.5rem;
 }
 
 .hero-buttons a {
@@ -110,27 +116,24 @@ nav {
   padding: 0.8rem 1.5rem;
   text-decoration: none;
   font-weight: 500;
-  border-radius: 30px;
+  border-radius: 5px;
 }
 
 .btn-primary {
-  background: #facc15;
-  color: #1e293b;
-  font-weight: bold;
-  transition: background 0.3s;
+  background: #007bff;
+  color: #fff;
 }
 
 .btn-secondary {
-  background: #facc15;
-  color: #1e293b;
-  font-weight: bold;
-  transition: background 0.3s;
+  background: #fff;
+  color: #333;
+  border: 2px solid #007bff;
 }
 
-.btn-primary:hover {
-  background: #eab308;
+.btn-primary:hover,
+.btn-secondary:hover {
+  opacity: 0.8;
 }
-
 /* About Section */
 #about {
   padding: 5rem 2rem;
